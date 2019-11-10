@@ -14,15 +14,15 @@ var main = async ()=>{
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-        from: '"divine" <cdivine304@gmail.com>', // sender address
-        to: 'cdivine304@gmail.com', // list of receivers
+        from: '"divine" <divinexyz@gmail.com>', // sender address
+        to: 'divinexyz@gmail.com', // list of receivers
         subject: 'Hello ✔', // Subject line
         text: 'Hello world?', // plain text body
         html: '<b>Hello world?</b>', // html body
         attachments: [
             {   // utf-8 string as an attachment
                 filename: 'pic1.jpg',
-                path: '/Users/dev/Applications/codes/insuredmine/mailing/pic1.jpg'
+                path: '/absolute/path/to/imagefile/pic1.jpg'
             },
         ]
     });
